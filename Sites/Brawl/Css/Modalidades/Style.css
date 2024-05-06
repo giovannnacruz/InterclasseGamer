@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;&display=swap');
+
+*{
+  font-family: 'inter',sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --color-neutral-0:  #f5f5f5 ;
+  --color-neutral-10: #0463FA ;
+  --color-neutral-30: #a8a29e ;
+  --color-neutral-40: #f5f5f5 ;
+}
+
+/***Cabeçalho***/
+header{
+  background-color: #0463FA;
+ box-shadow: 0px 3px 10px #0463FA;
+}
+
+.nav-bar{
+display: flex;
+justify-content: space-between;
+padding: 1.5rem 1rem;
+}
+
+.Logo{
+  display: flex;
+  align-items: center;
+  align-self: left;
+  padding: 20px;
+}
+
+.Logo h1{
+  color: #fff;
+}
+
+.nav-list{
+display:flex;
+align-items: center;
+}
+
+.nav-list ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-item{
+  margin: 0 15px;
+}
+
+.nav-link{
+ text-decoration: none;
+ font-size: 1.15 rem;
+ color: #fff;
+ font-weight: 400;
+}
+
+.botao-form button{
+  border: none;
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.botao-form button a{
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.botao-mobile{
+  display: none;
+}
+
+.menu-mobile{
+  display: none;
+}
+
+/*** Conteudo ***/
+.Container-gif{
+ display: flex;
+ gap: 10px;
+height: 600px;
+flex-wrap: wrap;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.conteudo{
+width: 400px;
+height: 400px;
+border: solid black;
+}
+img{
+  opacity: 0.9;
+}
+
+/**Footer**/
+footer {
+  width: 100%;
+  color: var( --color-neutral-0) ;
+}
+
+#Footer-Conteudo {
+  background-color: var( --color-neutral-10) ;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem 3.5rem ;
+}
+
+#Footer-Contatos{
+  margin-bottom: 0.75rem;
+  
+}
+
+#Footer-Midias{
+  display: flex;
+  gap: 2rem ;
+  margin-top: 1.5rem ;
+}
+
+
+#Footer-Midias .Footer-link{
+  height: 3rem;
+  width:  3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var( --color-neutral-40 );
+  border-radius: 50%;
+}
+
+#Footer-Midias .Footer-link:hover{
+  opacity: 0.8;
+}
+
+#Footer-Midias .Footer-link i{
+  font-size: 1.25rem;
+}
+
+.Footer-link{
+  text-decoration: none;
+}
+
+#github{
+  background: #000;
+}
+
+#Instagram{
+  background: linear-gradient(#7f37c9, #ff2992,#ff9807);
+}
+
+#facebook{
+  background-color: #4267b3;
+}
+
+#footer_copyright{
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+  padding: 1.2rem;
+  font-weight: 100;
+  background: var(--color-neutral-30) ;
+}
+
+@media screen and (max-width: 730px) { 
+  #footer_content{
+    grid-template-columns:repeat(2,1fr) ;
+    gap: 2rem ;
+  }
+
+  .nav-bar{
+      padding: 1.5 rem 4rem;
+  }
+
+  .nav-item{
+    display: none;
+}
+
+  .botao-form{
+    display: none;
+  }
+
+ .botao-mobile{
+  display: block;
+ }
+
+ .botao-mobile button{
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+ }
+
+ .menu-mobile ul{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+ }
+
+ .menu-mobile .nav-item{
+  display: block;
+  padding-top: 1.2rem;
+}
+
+ .menu-mobile .botao-mobile{
+  display: block;
+  padding: 1rem 2rem;
+ }
+
+ .menu-mobile .botao-mobile button{
+    width: 100%;
+ } 
+
+ .open{
+     display: block;
+ }
+}
+
+@media screen and (max-width: 415px) { 
+  #footer_content{
+    grid-template-columns:repeat(1,1fr) ;
+    gap: 2rem ;
+  }
+  
+}
+
+
+
